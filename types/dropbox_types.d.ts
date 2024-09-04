@@ -2038,6 +2038,22 @@
       rev?: Rev;
     }
 
+    export interface FileBinary {
+      /**
+       * The type of the file binary.
+       */
+      type: 'Buffer';
+
+      /**
+       * The binary data of the file.
+       */
+      data: number[];
+    }
+
+    export interface DownloadResult extends FileMetadata {
+      fileBinary: FileBinary
+    }
+
     export interface DownloadErrorPath {
       '.tag': 'path';
       path: LookupError;

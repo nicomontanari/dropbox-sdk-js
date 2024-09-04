@@ -936,7 +936,7 @@ export class Dropbox {
      * DropboxResponseError<files.DownloadError>.
      * @param arg The request parameters.
      */
-    public filesDownload(arg: files.DownloadArg): Promise<DropboxResponse<files.FileMetadata>>;
+    public filesDownload(arg: files.DownloadArg): Promise<DropboxResponse<files.DownloadResult>>;
 
     /**
      * Download a folder from the user's Dropbox, as a zip file. The folder must
